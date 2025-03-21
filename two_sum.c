@@ -8,6 +8,14 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     int *arr = (int*) malloc(sizeof(int) * *returnSize);
 
     //loop through the array
-    for
+    int i = 0;
+    int *p;
+    p[i] = &nums[i];
+
+    for(; i < numsSize; i++){
+        for(int j = i + 1; j < numsSize; j++){
+            
+        }
+    }
     
 }
