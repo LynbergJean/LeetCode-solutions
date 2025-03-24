@@ -12,10 +12,18 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     int *p;
     p[i] = &nums[i];
 
+    int *q;
+    
     for(; i < numsSize; i++){
         for(int j = i + 1; j < numsSize; j++){
-            
+            q = &nums[j];
+            if(*p + *q == target){
+                *arr = i;
+                arr++;
+                *arr = j;
+            }
         }
     }
+    return arr;
     
 }
